@@ -1,0 +1,107 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .contact_wraper {
+        .wraper;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            .head_one;
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+        .second_head {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 80px;
+
+            h2 {
+                .head_two;
+                margin: 0 10px;
+            }
+            hr {
+                width: 20px;
+                display: block;
+                color: #666666;
+                border: none;
+                background-color: #666666;
+                height: 1px;
+            }
+        }
+        p {
+            font-size: 17px;
+            font-family: 'Open-Sans', sans-serif;
+        }
+        hr {
+            width: 50px;
+            display: block;
+            border: none;
+            background-color: #b5b5b5;
+            height: 1px;
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+            input[name="name"] {
+                width: 280px;
+                height: 50px;
+                border: none;
+                border-bottom: 1px solid #dddddd;
+                margin: 0 15px;
+            }
+            input[name="email"] {
+                width: 280px;
+                height: 50px;
+                border: none;
+                border-bottom: 1px solid #dddddd;
+                margin: 0 15px;
+                background-color: none;
+            }
+            input[name="subject"] {
+                width: 280px;
+                height: 50px;
+                border: none;
+                border-bottom: 1px solid #dddddd;
+                margin: 0 15px;
+            }
+            textarea {
+                margin-top: 50px;
+                width: 900px;
+                height: 100px;
+                border: none;
+                border-bottom: 1px solid #dddddd;
+                margin-bottom: 80px;
+                resize: none;
+                &:placeholder-shown{
+                    font-size: 14px;
+                    font-family: 'Varela',sans-serif;
+                }
+            }
+            input[name="send"] {
+                width: 900px;
+                height: 50px;
+                border: 1px solid #dddddd;
+                margin-bottom: 80px;
+                background-color: white;
+                cursor: pointer;
+
+            }
+
+
+        }
+        img[alt="map"] {
+            margin-bottom: 100px;
+        }
+    }
+}

@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'Varela-Regular';
-  src: url('/fonts/varela/Varela-Regular.eot');
-  src: url('/fonts/varela/Varela-Regular.woff') format('woff2'),
-       url('/fonts/varela/Varela-Regular.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/varela/Varela-Regular.eot');
+  src: url('fonts/varela/Varela-Regular.woff') format('woff2'),
+       url('fonts/varela/Varela-Regular.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Varela';
-  src: url('/fonts/varela/Varela.woff') format('woff'),
-       url('/fonts/varela/Varela.ttf') format('truetype'),
-       url('/fonts/varela/Varela.svg#Varela') format('svg');
+  src: url('varela/Varela.woff') format('woff'),
+       url('varela/Varela.ttf') format('truetype'),
+       url('varela/Varela.svg#Varela') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'OpenSans-Regular';
-  src: url('/fonts/openSansRegular/OpenSans-Regular.eot');
-  src: url('/fonts/openSansRegular/OpenSans-Regular.woff2') format('woff2'),
-       url('/fonts/openSansRegular/OpenSans-Regular.woff') format('woff'),
+  src: url('openSansRegular/OpenSans-Regular.eot');
+  src: url('openSansRegular/OpenSans-Regular.woff2') format('woff2'),
+       url('openSansRegular/OpenSans-Regular.woff') format('woff'),
        url('/fonts/openSansRegular/OpenSans-Regular.ttf') format('truetype'),
        url('/fonts/openSansRegular/OpenSans-Regular.svg#OpenSans-Regular') format('svg'),
        url('/fonts/openSansRegular/OpenSans-Regular.eot?#iefix') format('embedded-opentype');
