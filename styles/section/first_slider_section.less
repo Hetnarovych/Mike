@@ -1,0 +1,197 @@
+@variables.less;
+
+.first_slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    .first_slider_wraper {
+        .wraper;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .arrows {
+            margin-top: 76px;
+            margin-bottom: 42px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .arrow_left {
+                width: 30px;
+                height: 30px;
+                border: 1px solid #eeeeee;
+                background-color: white;
+                transform: rotate(-45deg);
+                margin-right: 6px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .arrow_right {
+                width: 30px;
+                height: 30px;
+                border: 1px solid #eeeeee;
+                background-color: white;
+                transform: rotate(-45deg);
+                margin-left: 6px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img[alt="svg"] {
+                transform: rotate(45deg);
+                width: 50%;
+            }
+        }
+        .slider_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            border-bottom: 4px solid #0066cc;
+            margin-bottom: 76px;
+            flex-wrap: wrap;
+            .slide_one,
+            .slide_two,
+            .slide_tree,
+            .slide_four,
+            .slide_five {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 230px;
+                height: 160px;
+                background-color: white;
+                transition: 0.5s;
+                &:nth-child(2n) {
+                    background-color: #fbfbfb;
+                }
+                &:hover {
+                    background-color: #0066cc;
+                    .one_box_icon,
+                    .two_box_icon,
+                    .tree_box_icon,
+                    .four_box_icon,
+                    .five_box_icon {
+                        background-color: white;
+                        box-shadow: none;
+                        width: 80px;
+                        height: 80px;
+                        margin-bottom: 0px;
+                        #Capa {
+                            width: 40px;
+                            fill: #0066cc;
+                            height: 40px;
+                        }
+                    }
+                    p {
+                        display: none;
+                    }
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        bottom: -15%;
+                        left: 39%;
+                        border-left: 25px solid transparent;
+                        border-right: 25px solid transparent;
+                        border-bottom: 20px solid #0066cc;
+                        width: 0;
+                        height: 0;
+                        transform: rotate(180deg);
+                        z-index: 99;
+                    }
+
+                }
+                .one_box_icon,
+                .two_box_icon,
+                .tree_box_icon,
+                .four_box_icon,
+                .five_box_icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    transform: rotate(-45deg);
+                    border: 1px solid #eeeeee; //        box-shadow: -5px 5px 1px 1px #e5e5e5;
+                    box-shadow: -10px 10px 20px -4px #e5e5e5;
+                    margin-bottom: 40px;
+                    #Capa {
+                        width: 20px;
+                        height: 20px;
+                        transform: rotate(45deg);
+                    }
+                }
+                p {
+                    text-transform: uppercase;
+                    font-family: 'Open-Sans', sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+
+                }
+            }
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .right_side_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                h1 {
+                    font-size: 28px;
+                    font-family: 'Open-Sans', sans-serif;
+                    margin-bottom: 38px;
+                    margin-top: 40px;
+                }
+                p {
+                    font-size: 13px;
+                    font-family: 'Open-Sans', sans-serif;
+                    margin-right: 46px;
+                }
+                hr {
+                    width: 50px;
+                    display: block;
+                    color: #666666;
+                    border: none;
+                    background-color: #999999;
+                    height: 1px;
+                    margin-bottom: 20px;
+                    margin-left: 0px;
+                    margin-top: 44px;
+                }
+                h6{
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    font-family: 'Varela',sans-serif;
+                    a{
+                        text-decoration: none;
+                        color: #0066cc;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 620px) {}

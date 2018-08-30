@@ -1,0 +1,154 @@
+@variables.less;
+
+.my_team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .team_wraper {
+        .wraper;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            .head_one;
+            margin-top: 80px;
+            margin-bottom: 10px;
+        }
+        .second_header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 60px;
+            margin-bottom: 16px;
+            h2 {
+                .head_two;
+                padding: 0 10px;
+            }
+            hr {
+                width: 20px;
+                display: block;
+                color: #666666;
+                border: none;
+                background-color: #666666;
+                height: 1px;
+                margin: 0 10px;
+            }
+        }
+        .cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            perspective: 1000px;
+
+
+            .card_one,
+            .card_two,
+            .card_tree,
+            .card_four {
+                cursor: pointer;
+                width: 270px;
+                height: 334px;
+                margin-bottom: 112px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #cccc;
+                overflow: hidden;
+                transition: 1s;
+                box-shadow: 5px 24px 111px -40px black;
+                backface-visibility: hidden;
+                box-sizing: border-box;
+                p {
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-family: 'Open-Sans', sans-serif;
+                    font-weight: 600;
+                    margin-top: 24px;
+                }
+
+                &:active {
+                    transform: rotatey(-110deg);
+                    transform-origin: left;
+                    transition: 1.4s;
+
+                }
+                &:active + .back_side {
+                    opacity: 1;
+                    transition: 1s;
+                }
+            }
+        }
+        .back_side {
+            width: 270px;
+            height: 334px;
+            background-color: #0066cc;
+            opacity: 0;
+            margin-left: -291px;
+            margin-top: -112px;
+            z-index: -99;
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Varela', sans-serif;
+            text-transform: uppercase;
+            color: white;
+            h1 {
+                font-size: 20px;
+                color: white;
+                margin-top: 0px;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+            h2 {
+                font-size: 14px;
+                margin-bottom: 40px;
+            }
+            hr {
+                width: 50px;
+                background-color: white;
+                border: none;
+                height: 1px;
+                margin-bottom: 40px;
+            }
+            p {
+                font-size: 10px;
+                line-height: 20px;
+                margin-bottom: 40px;
+            }
+            .link_box {
+                display: flex;
+                flex-direction: row;
+                .lnk_one,
+                .lnk_two,
+                .lnk_tree,
+                .lnk_four {
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid white;
+                    transform: rotate(-45deg);
+                    margin-left: 14px;
+                    img[alt="lnk"] {
+                        width: 18px;
+                        transform: rotate(45deg);
+                        &:hover {
+                            transform: rotatez(405deg);
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
