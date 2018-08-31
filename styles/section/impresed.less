@@ -151,49 +151,60 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            img[alt="twi"]{
-                transform: rotate(45deg);
-            }
-        }
-        h1 {
-            color: white;
-            font-family: 'Varela', sans-serif;
-            margin-bottom: 30px;
-        }
-        hr {
-            width: 50px;
-            border: none;
-            background-color: white;
-            height: 1px;
-            margin-bottom: 50px;
-        }
-        p {
-            font-family: 'Open-Sans', sans-serif;
-            font-size: 15px;
-            color: #e0e0e0;
-            margin-bottom: 80px;
-            a {
-                color: #0066cc;
-            }
-        }
-        .button_folow {
-            width: 170px;
-            height: 50px;
-            border: 1px solid white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 110px;
-            cursor: pointer;
+            transition: 1s;
             &:hover {
+                transform: rotatey(1240deg);
+                transition: 1s;
+                background-color: #0066cc;
+                img[alt="twi"] {
+                    transform: rotatey(540deg);
+                    transition: 1.4s;
+                }
+            }
+                img[alt="twi"] {
+                    transform: rotate(45deg);
+                    transition: 1.4s;
+                }
+            }
+            h1 {
+                color: white;
+                font-family: 'Varela', sans-serif;
+                margin-bottom: 30px;
+            }
+            hr {
+                width: 50px;
+                border: none;
+                background-color: white;
+                height: 1px;
+                margin-bottom: 50px;
+            }
+            p {
+                font-family: 'Open-Sans', sans-serif;
+                font-size: 15px;
+                color: #e0e0e0;
+                margin-bottom: 80px;
+                a {
+                    color: #0066cc;
+                }
+            }
+            .button_folow {
+                width: 170px;
+                height: 50px;
+                border: 1px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 110px;
+                cursor: pointer;
+                &:hover {
                     background-color: #0066cc;
                     color: white;
                 }
-            h6 {
-                color: white;
-                font-family: 'Varela', sans-serif;
-                font-size: 15px;
+                h6 {
+                    color: white;
+                    font-family: 'Varela', sans-serif;
+                    font-size: 15px;
+                }
             }
         }
     }
-}
