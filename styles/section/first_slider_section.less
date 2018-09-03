@@ -187,14 +187,6 @@
 }
 
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1180px) {
     .content {
         width: 90%;
@@ -278,13 +270,87 @@
                     h6 {
                         margin-bottom: 160px;
                     }
-                   
+
                 }
-                 img[alt="sl_one"] {
-                        width: 100%;
-                        margin-top: 0px;
-                    }
+                img[alt="sl_one"] {
+                    width: 100%;
+                    margin-top: 0px;
+                }
             }
         }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .first_slider {
+        .first_slider_wraper {
+            flex-direction: row;
+            .arrows {
+                display: none;
+            }
+            .slider_box {
+                flex-direction: column;
+                margin-left: -100px;
+                .slide_one,
+                .slide_two,
+                .slide_tree,
+                .slide_four,
+                .slide_five {
+                    min-width: 90px;
+                    max-height: 100px;
+                    .one_box_icon,
+                    .two_box_icon,
+                    .tree_box_icon,
+                    .four_box_icon,
+                    .five_box_icon {
+                        width: 30px;
+                        height: 30px;
+                        margin-bottom: 20px;
+                    }
+                    p {
+                        font-weight: 500;
+                    }
+                    &:hover {
+                        .one_box_icon,
+                        .two_box_icon,
+                        .tree_box_icon,
+                        .four_box_icon,
+                        .five_box_icon {
+                            width: 60px;
+                            height: 60px;
+                            margin-bottom: 0px;
+                            &:before {
+                                display: none;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+            .content {
+            flex-direction: column;
+            margin-top: -80px;
+            margin-left: -80px;
+            max-width: 160px;
+
+            .right_side_content {
+                hr {
+                    visibility: hidden;
+                }
+                h6 {
+                    margin-bottom: 20px;
+                }
+                p {
+                    margin-right: 0px;
+                }
+
+            }
+            img[alt="sl_one"] {
+                display: none;
+            }
+        }
+        }
+
     }
 }
