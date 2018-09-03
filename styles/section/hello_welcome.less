@@ -122,8 +122,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: nowrap;
-        //        box-shadow: -5px 5px 1px 1px #e5e5e5;
+        flex-wrap: nowrap; //        box-shadow: -5px 5px 1px 1px #e5e5e5;
         box-shadow: -20px 20px 20px -4px #e5e5e5;
 
     }
@@ -160,7 +159,7 @@
     }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1140px) {
 
     .hello_welcome {
         .center_romb {
@@ -179,7 +178,7 @@
             }
             .second_child {
                 .item_two {
-                    margin-left: -20px;
+                    margin-left: 0px;
                     margin-bottom: 30px;
                 }
             }
@@ -192,6 +191,7 @@
     .hello_welcome {
         .all_box {
             .first_child {
+                margin-left: 15px;
                 .item_one {
                     flex-direction: row;
                     margin-right: 10px;
@@ -231,10 +231,10 @@
                 margin-top: -50px;
                 .first_child {
                     flex-wrap: nowrap;
-                    margin-left: -68px;
+                    margin-left: -15px;
                     .item_one {
                         min-width: 320px;
-                        margin-left: 60px;
+                        margin-left: 40px;
                         .text_sec {
                             margin-bottom: 40px;
                         }
@@ -245,7 +245,7 @@
                     flex-wrap: nowrap;
                     min-width: 320px;
                     margin-bottom: -200px;
-                    margin-left: -410px;
+                    margin-left: -430px;
                     .item_two {
                         margin-bottom: 80px;
 
@@ -259,13 +259,41 @@
 
 @media screen and (max-width: 450px) {
     .hello_welcome {
-        .all_box {
-            .first_child {
-                margin-right: 45px;
+        .hello_wraper {
+            .all_box {
+                .first_child {
+                    margin-right: 20px;
+                    .item_one{
+                        p{
+                            margin-bottom: 10px;
+                            margin-left: 20px;
+                            margin-top: -10px;
+                        }
+                        h6{
+                            max-width: 180px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+                .second_child {
+                    margin-left: -362px;
+                    .item_two{
+                        p{
+                            margin-bottom: 10px;
+                            margin-left: 0px;
+                            margin-top: -10px;
+                        }
+                        h6{
+                            max-width: 180px;
+                            margin-left: 0px;
+                        }
+                    }
+                }
             }
-        }
-        .romb {
-            display: none;
+            .romb {
+                max-width: 30px;
+                min-height: 30px;
+            }
         }
     }
 }

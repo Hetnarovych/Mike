@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     .about_wraper {
         .wraper;
         width: 100%;
@@ -184,13 +185,30 @@
 @media screen and (max-width: 800px) {
     .about {
         .about_wraper {
-            .second_head {
-                hr {
-                    height: 2px;
+            .about_all_box {
+                .about_box_one,
+                .about_box_two,
+                .about_box_tree,
+                .about_box_four {
+                    margin-bottom: -50px;
                 }
+                .second_head {
+                    hr {
+                        height: 2px;
+                    }
 
+                }
             }
         }
     }
+}
 
+@media screen and (max-width: 1100px) {
+    .about {
+        .about_wraper {
+            p {
+                max-width: 150px;
+            }
+        }
+    }
 }

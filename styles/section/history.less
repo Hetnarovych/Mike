@@ -361,3 +361,48 @@
         }
     }
 }
+
+@media screen and (max-width: 970px){
+    .history {
+        .history_wraper {
+            .history_box {
+                .timeline_box{
+                    margin-left: 440px;
+                    .content_box {
+                        .cont_two{
+                             margin-left: -460px;
+                            .head {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                               
+                                .name{
+                                  &:before {
+                                    content: '';
+                                    position: absolute;
+                                    left: 97%;
+                                    top: 13px;
+                                    width: 0;
+                                    height: 0;
+                                    border-top: 12px solid transparent;
+                                    border-right: 12px solid #f6f6f6;
+                                    border-bottom: 12px solid transparent;
+                                    transform: rotate(360deg);
+                                }
+                            }
+                            }
+                            .cont{
+                                margin-left: -62px;
+                            }
+                            .line_bottom{
+                                margin-left: -8px;
+                            }
+                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
