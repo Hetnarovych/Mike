@@ -275,6 +275,7 @@
                 img[alt="sl_one"] {
                     width: 100%;
                     margin-top: 0px;
+                    margin-left: -10px;
                 }
             }
         }
@@ -291,6 +292,7 @@
             .slider_box {
                 flex-direction: column;
                 margin-left: -100px;
+                margin-top: 30px;
                 .slide_one,
                 .slide_two,
                 .slide_tree,
@@ -298,6 +300,7 @@
                 .slide_five {
                     min-width: 90px;
                     max-height: 100px;
+                    opacity: 0.8;
                     .one_box_icon,
                     .two_box_icon,
                     .tree_box_icon,
@@ -306,11 +309,14 @@
                         width: 30px;
                         height: 30px;
                         margin-bottom: 20px;
+
+
                     }
                     p {
-                        font-weight: 500;
+                        font-weight: 100;
                     }
                     &:hover {
+                        opacity: 1;
                         .one_box_icon,
                         .two_box_icon,
                         .tree_box_icon,
@@ -329,27 +335,31 @@
                 }
             }
             .content {
-            flex-direction: column;
-            margin-top: -80px;
-            margin-left: -80px;
-            max-width: 160px;
+                flex-direction: column;
+                margin-top: 120px;
+                margin-left: -80px;
+                max-width: 160px;
+                margin-top: -100px;
+                margin-bottom: -100px;
 
-            .right_side_content {
-                hr {
-                    visibility: hidden;
-                }
-                h6 {
-                    margin-bottom: 20px;
-                }
-                p {
-                    margin-right: 0px;
-                }
+                .right_side_content {
+                    hr {
+                        visibility: hidden;
+                    }
+                    h6 {
+                        margin-top: 40px;
+                        margin-bottom: 74px;
+                        font-size: 14px;
+                    }
+                    p {
+                        margin-right: 0px;
+                    }
 
+                }
+                img[alt="sl_one"] {
+                    display: none;
+                }
             }
-            img[alt="sl_one"] {
-                display: none;
-            }
-        }
         }
 
     }

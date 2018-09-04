@@ -83,9 +83,9 @@
                 border-bottom: 1px solid #dddddd;
                 margin-bottom: 80px;
                 resize: none;
-                &:placeholder-shown{
+                &:placeholder-shown {
                     font-size: 14px;
-                    font-family: 'Varela',sans-serif;
+                    font-family: 'Varela', sans-serif;
                 }
             }
             input[name="send"] {
@@ -103,6 +103,21 @@
         img[alt="map"] {
             margin-bottom: 100px;
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        .contact_wraper {
+            form {
+                textarea {
+                    width: 90%;;
+                }
+                input[name="send"]{
+                    width: 90%;
+                }
+            }
         }
     }
 }
