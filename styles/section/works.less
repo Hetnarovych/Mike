@@ -62,7 +62,6 @@
                         width: 130px;
                         height: 100%;
                         border-right: 1px solid #eeeeee;
-                        border-left: 1px solid #eeeeee;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -297,6 +296,18 @@
     .works {
         .works_wraper {
             .galery {
+                .galery_menu{
+                    .right_button{
+                        border: none;
+                    }
+                       .left_button {
+                        .lf_but_box {
+                            &:nth-child(n+3) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
                 .galery_picture {
                     .box,
                     .box_two,
@@ -306,10 +317,11 @@
                     .box_th,
                     .box_sv,
                     .box_ei {
-                        width: 184px;
+                        width: 144px;
+                        height: 180px;
                         .text {
                             p {
-                                font-size: 16px;
+                                font-size: 12px;
                             }
                         }
                     }
