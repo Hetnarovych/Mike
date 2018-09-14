@@ -259,8 +259,9 @@
 
 @media screen and (max-width: 450px) {
     .hello_welcome {
-        display: none;
         .hello_wraper {
+            width: 100%;
+            justify-content: center;
             .all_box {
                 .first_child {
                     margin-right: 30px;
@@ -280,6 +281,54 @@
                 }
                 .second_child {
                     margin-left: -362px;
+                    .item_two{
+                        margin-top: 32px;
+                        margin-left: 2px;
+                        p{
+                            margin-bottom: 10px;
+                            margin-left: 10px;
+                            margin-top: -10px;
+                        }
+                        h6{
+                            max-width: 180px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            .romb {
+                max-width: 30px;
+                min-height: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .hello_welcome {
+        .hello_wraper {
+            width: 100%;
+            justify-content: center;
+            .all_box {
+                .first_child {
+                    margin-right: 0px;
+                    max-width: 320px;
+                    .item_one{
+                        margin-left: 80px;
+                        p{
+                            margin-bottom: 10px;
+                            margin-left: 30px;
+                            margin-top: -10px;
+                        }
+                        h6{
+                            max-width: 180px;
+                            margin-left: 30px;
+                            margin-right: 0px;
+                        }
+
+                    }
+                }
+                .second_child {
+                    margin-left: -287px;
                     .item_two{
                         margin-top: 32px;
                         margin-left: 2px;
